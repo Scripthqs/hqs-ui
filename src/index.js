@@ -2,49 +2,49 @@
 // 定义 install 方法，接收 Vue 作为参数。如果使用 use 注册插件，则所有的组件都将被注册
 // 统一导出
 // 导入颜色选择器组件
-import Button from './button.vue'
-import Icon from './icon.vue'
-import ButtonGroup from './button-group'
-import Input from './input'
-import Row from './row'
-import Col from './col'
-import Layout from './layout'
-import Sider from './sider'
-import Content from './content'
-import Footer from './footer'
-import Header from './header'
+import Button from '../src/button/button'
+import Icon from '../src/icon/icon'
+import ButtonGroup from '../src/button/button-group'
+import Input from '../src/input/input'
+import Tabs from '../src/tabs/tabs'
+import TabsHead from '../src/tabs/tabs-head'
+import TabsBody from '../src/tabs/tabs-body'
+import TabsItem from '../src/tabs/tabs-item'
+import TabsPane from '../src/tabs/tabs-pane'
+import Row from '../src/grid/row'
+import Col from '../src/grid/col'
+import Layout from '../src/layout/layout'
+import Sider from '../src/layout/sider'
+import Content from '../src/layout/content'
+import Footer from '../src/layout/footer'
+import Header from '../src/layout/header'
 import plugin from './plugin'
-import Tabs from './tabs'
-import TabsHead from './tabs-head'
-import TabsBody from './tabs-body'
-import TabsItem from './tabs-item'
-import TabsPane from './tabs-pane'
-import Popover from './popover'
-import Collapse from './collapse'
-import CollapseItem from './collapse-item'
+import Popover from '../src/popover/popover'
+import Collapse from '../src/collapse/collapse'
+import CollapseItem from '../src/collapse/collapse-item'
 
 
 
 const install = function (Vue) {
-  Vue.component('f-button', Button)
-  Vue.component('f-icon', Icon)
-  Vue.component('f-button-group', ButtonGroup)
-  Vue.component('f-input', Input)
-  Vue.component('f-row', Row)
-  Vue.component('f-col', Col)
-  Vue.component('f-layout', Layout)
-  Vue.component('f-header', Header)
-  Vue.component('f-footer', Footer)
-  Vue.component('f-sider', Sider)
-  Vue.component('f-content', Content)
-  Vue.component('f-tabs', Tabs)
-  Vue.component('f-tabs-head', TabsHead)
-  Vue.component('f-tabs-body', TabsBody)
-  Vue.component('f-tabs-item', TabsItem)
-  Vue.component('f-tabs-pane', TabsPane)
-  Vue.component('f-popover', Popover)
-  Vue.component('f-collapse', Collapse)
-  Vue.component('f-collapse-item', CollapseItem)
+  Vue.component('h-button', Button)
+  Vue.component('h-icon', Icon)
+  Vue.component('h-button-group', ButtonGroup)
+  Vue.component('h-input', Input)
+  Vue.component('h-tabs', Tabs)
+  Vue.component('h-tabs-head', TabsHead)
+  Vue.component('h-tabs-body', TabsBody)
+  Vue.component('h-tabs-item', TabsItem)
+  Vue.component('h-tabs-pane', TabsPane)
+  Vue.component('h-row', Row)
+  Vue.component('h-col', Col)
+  Vue.component('h-layout', Layout)
+  Vue.component('h-header', Header)
+  Vue.component('h-footer', Footer)
+  Vue.component('h-sider', Sider)
+  Vue.component('h-content', Content)
+  Vue.component('h-popover', Popover)
+  Vue.component('h-collapse', Collapse)
+  Vue.component('h-collapse-item', CollapseItem)
   Vue.use(plugin)
 }
 
