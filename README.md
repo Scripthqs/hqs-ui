@@ -10,10 +10,10 @@
 
 2.引用
 
-- index.js全局引入hqs-Ui(推荐)
+- index.js全局引入hqs-UI(推荐)
 
 ```js
-import {Button,ButtonGroup,Row,Col,Header,Footer,Content,Sider,Layout,Icon,Input,Toast,plugin,Tabs,TabsHead,TabsBody,TabsItem,Collapse,CollapseItem,Popover} from 'fli-ui'
+import {Button,ButtonGroup,Row,Col,Header,Footer,Content,Sider,Layout,Icon,Input,Toast,plugin,Tabs,TabsHead,TabsBody,TabsItem,Collapse,CollapseItem,Popover} from 'hqs-ui'
 import 'hqs-ui/dist/index.css'
 
 Vue.component('h-button', Button)
@@ -53,8 +53,6 @@ import {Button} from 'hqs-ui'
 
 组件最外层的元素会自动添加h-*的类名，你也可以在外层添加自己的容器元素包裹组件，并添加自己的类名，覆盖默认样式
 
-3.点击该项目上方链接，获取使用方法
-
 ## 运行
 
 通过如下步骤可以直接运行项目：
@@ -62,25 +60,7 @@ import {Button} from 'hqs-ui'
 ```shell
 1.git clone https://github.com/Scripthqs/hqs-ui.git
 2.npm install
-3.npm run start
+3.npm run s
 ```
 
 运行入口为src/index.js文件，该文件中是各个组件的使用代码，可以在此引用全部组件，自由修改测试
-
-### 启动
-
-```shell
-npm run docs:dev
-```
-
-### 构建
-
-```shell
-npm run docs:build
-```
-
-## 打包
-
-```shell
-npm run build
-```
